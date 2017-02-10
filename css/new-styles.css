@@ -68,8 +68,9 @@
 }
 .card .entry-thumbnail {
     width: 100%;
-    max-height: 185px;
-    overflow: hidden;
+    height: 185px;
+    background-position: center center;
+    background-size: cover;
 }
 .card .entry-thumbnail img {
     width: 100%;
