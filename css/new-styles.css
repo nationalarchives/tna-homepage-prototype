@@ -2,6 +2,21 @@
  * New styles go here
  */
 
+.banner {
+    padding: 1em;
+    height: 360px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 1.6em;
+}
+.banner h1 {
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    margin-top: 48px;
+}
+
 .equal-heights-flex-box {
     display: -webkit-flex;
     display: -ms-flexbox;
