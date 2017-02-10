@@ -42,6 +42,9 @@
 .no-breadcrumb {
     margin-top: 46px;
 }
+.newsletter-template {
+    margin-bottom: 1.5em;
+}
 
 .equal-heights-flex-box {
     display: -webkit-flex;
