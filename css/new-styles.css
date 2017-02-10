@@ -2,7 +2,7 @@
  * New styles go here
  */
 
-.banner {
+.banner-full-width {
     padding: 1em;
     height: 360px;
     width: 100%;
@@ -10,11 +10,37 @@
     background-size: cover;
     margin-bottom: 1.6em;
 }
-.banner h1 {
+.banner-full-width h1 {
     color: #fff;
     text-shadow: 2px 2px 5px #000;
     text-align: center;
     margin-top: 48px;
+}
+.home-banner {
+    background-position: center center;
+    background-size: cover;
+    height: 288px;
+    position: relative;
+}
+.home-banner .entry-header {
+    background: none;
+}
+.home-banner .entry-content {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    background: rgba(0,0,0,.66);
+    color: #ddd;
+    width: 100%;
+    padding: 1em .2em;
+}
+.home-banner .entry-content h3 {
+    margin-top: 0;
+}
+.no-breadcrumb {
+    margin-top: 46px;
 }
 
 .equal-heights-flex-box {
