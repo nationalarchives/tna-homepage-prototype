@@ -4,7 +4,7 @@
 
 .banner-full-width {
     padding: 1em;
-    height: 360px;
+    height: 330px;
     width: 100%;
     background-position: center center;
     background-size: cover;
@@ -38,6 +38,22 @@
 }
 .home-banner .entry-content h3 {
     margin-top: 0;
+}
+.banner-header {
+    color: #fff;
+}
+.banner-header .open {
+    max-width: 280px;
+    margin: 0 auto;
+    padding-left: 60px;
+    text-align: left;
+    background: url('../img/clock.png') left top no-repeat;
+}
+.banner-header .open a:active, .banner-header .open a:link, .banner-header .open a:visited {
+    color: #fce45c;
+}
+.banner-header .action {
+    margin: 1.5em 0 2.5em;
 }
 .no-breadcrumb {
     margin-top: 46px;
