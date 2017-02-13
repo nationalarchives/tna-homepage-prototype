@@ -4,7 +4,7 @@
 
 .banner-full-width {
     padding: 1em;
-    height: 330px;
+    min-height: 320px;
     width: 100%;
     background-position: center center;
     background-size: cover;
@@ -54,6 +54,9 @@
 }
 .banner-header .action {
     margin: 1.5em 0 2.5em;
+}
+.banner-header .action .button {
+    margin: 0 0.2em 0.5em;
 }
 .no-breadcrumb {
     margin-top: 46px;
@@ -140,23 +143,38 @@
     background-position: center center;
     background-size: cover;
 }
+.banner-content-wrapper {
+    padding: 1.3em;
+    width: 100%;
+    background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #000 , transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #000, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #000, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #000 , transparent); /* Standard syntax */
+}
 .banner-content {
     color: #fff;
-    padding: 1.3em 2em;
-    width: 40%;
-    background: #000; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #000 , #000 , transparent); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #000, #000 , transparent); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #000, #000 , transparent); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #000 , #000 , transparent); /* Standard syntax */
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 48% 0 15px;
 }
 .banner-toolbar {
     border-top: 1px #eee solid;
     padding-top: 0.5em;
 }
 @media (max-width: 768px) {
-    .card-grid, .banner-content {
+    .card-grid {
         width: 100%;
+    }
+    .banner-content {
+        padding: 0 15px;
+    }
+    .banner-content-wrapper {
+        background: #000; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, #000 , #000 , transparent); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #000, #000 , transparent); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #000, #000 , transparent); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #000 , #000 , transparent); /* Standard syntax */
     }
 }
 
