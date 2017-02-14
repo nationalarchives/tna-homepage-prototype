@@ -138,6 +138,9 @@
 .card .entry-thumbnail img {
     width: 100%;
 }
+.container .feature-banner {
+    margin: 0 15px;
+}
 .feature-banner {
     margin-bottom: 1.5em;
     background-position: center center;
