@@ -61,9 +61,6 @@
 .no-breadcrumb {
     margin-top: 46px;
 }
-.newsletter-template {
-    margin-bottom: 1.5em;
-}
 
 .equal-heights-flex-box {
     display: -webkit-flex;
@@ -75,6 +72,15 @@
 }
 .card-grid {
     width: 33.33333%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 1.5em;
+}
+.card-grid-4-items {
+    width: 25%;
     float: left;
     position: relative;
     min-height: 1px;
@@ -113,6 +119,9 @@
 .card .content-type img {
     float: right;
     opacity: 0.5;
+}
+.feature-banner .content-type img {
+    float: right;
 }
 .card a {
     position: relative;
@@ -165,9 +174,21 @@
     border-top: 1px #eee solid;
     padding-top: 0.5em;
 }
+.opening-times table {
+    width: 100%;
+}
+.follow-us img {
+    background-color: #008484;
+    border-radius: 50%;
+    padding: 9px;
+    margin-right: 0.2em;
+}
 @media (max-width: 768px) {
     .card-grid {
         width: 100%;
+    }
+    .card-grid-4-items {
+        width: 50%;
     }
     .banner-content {
         padding: 0 15px;
@@ -178,6 +199,11 @@
         background: -o-linear-gradient(right, #000, #000 , transparent); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(right, #000, #000 , transparent); /* For Firefox 3.6 to 15 */
         background: linear-gradient(to right, #000 , #000 , transparent); /* Standard syntax */
+    }
+}
+@media (max-width: 480px) {
+    .card-grid-4-items {
+        width: 100%;
     }
 }
 
