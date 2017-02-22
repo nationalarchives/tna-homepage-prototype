@@ -71,7 +71,7 @@
     flex-wrap: wrap;
 }
 .card-grid {
-    width: 33%;
+    width: 33.33333%;
     float: left;
     position: relative;
     min-height: 1px;
@@ -80,7 +80,7 @@
     margin-bottom: 1.5em;
 }
 .card-grid-4-items {
-    width: 24.3%;
+    width: 25%;
     float: left;
     position: relative;
     min-height: 1px;
@@ -185,6 +185,17 @@
     border-radius: 50%;
     padding: 9px;
     margin-right: 0.2em;
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .card-grid {
+        width: 33%;
+    }
+    .card-grid-4-items {
+        width: 49.6%;
+    }
 }
 @media (max-width: 768px) {
     .card-grid {
