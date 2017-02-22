@@ -88,6 +88,9 @@
     padding-right: 15px;
     margin-bottom: 1.5em;
 }
+.card-grid-4-items .card {
+    border-left: solid 4px #ccc;
+}
 .card {
     position: relative;
     height: 100%;
