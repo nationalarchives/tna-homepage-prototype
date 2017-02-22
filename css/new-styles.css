@@ -71,7 +71,7 @@
     flex-wrap: wrap;
 }
 .card-grid {
-    width: 33.33333%;
+    width: 33%;
     float: left;
     position: relative;
     min-height: 1px;
@@ -80,7 +80,7 @@
     margin-bottom: 1.5em;
 }
 .card-grid-4-items {
-    width: 25%;
+    width: 24.3%;
     float: left;
     position: relative;
     min-height: 1px;
