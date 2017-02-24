@@ -58,6 +58,47 @@
 .banner-header .action .button {
     margin: 0 0.2em 0.5em;
 }
+.blog-banner {
+    min-height: 260px;
+    margin-bottom: 0;
+}
+.blog-toolbar {
+    padding: 0.6em 0;
+}
+.blog-nav {
+    background-color: #fff;
+    margin-bottom: 1.6em;
+}
+.blog-nav a.button {
+    margin: 0.5em 0.5em 0.5em 0;
+}
+.blog-nav a.secondary-btn {
+    background: #eee;
+    color: #222;
+}
+.blog-nav form {
+    position: relative;
+    min-width: 287px;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+.blog-nav input[type=text] {
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0.5em;
+    height: auto;
+    display: block;
+    width: 246px;
+    border: 1px solid #008484;
+}
+.blog-nav input[type="submit"] {
+    top: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    width: 41px;
+    background-image: url(../img/search-white.png);
+}
 .no-breadcrumb {
     margin-top: 46px;
 }
@@ -184,7 +225,7 @@
     background-color: #008484;
     border-radius: 50%;
     padding: 9px;
-    margin-right: 0.2em;
+    margin: 0 0.2em 0.3em 0;
 }
 @media only screen
 and (min-device-width : 768px)

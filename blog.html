@@ -32,7 +32,7 @@
                 </a>
             </div>
             <div class="col-xs-2 col-sm-5" id="search-field-wrapper">
-                <form action="" method="get" id="globalSearch" role="search" class="hidden-xs">
+                <form action="/search/results" method="get" id="globalSearch" role="search" class="hidden-xs">
                     <span id="scope-selector">&nbsp;</span>
                     <input type="text" class="search-field" placeholder="Search our website..." id="tnaSearch" name="_q"
                            required aria-required="true">
@@ -48,47 +48,44 @@
     </div>
 </header>
 <main id="primary" role="main" class="content-area">
-    <div role="banner" class="banner-full-width"
-             style="background-image: url(./img/banner.jpg);">
+    <div role="banner" class="banner-full-width blog-banner"
+         style="background-image: url(./img/blog-banner.jpg);">
         <div class="banner-header text-center col-md-12">
-            <h1>Explore our records</h1>
-            <div class="action">
-            <a class="button" href="#">Help with your research</a>
-            <a class="button" href="#">Search the catalogue</a>
-            <a class="button" href="#">Find digitised collections</a>
-            </div>
-            <div class="open">
-                Open today 09:00 - 19:00<br>
-                    <a href="#">Plan your visit</a>
-            </div>
+            <h1>The National Archives blog</h1>
 
         </div>
     </div>
-    <!--<div class="container">
-        <div class="row no-breadcrumb" role="banner">
-            <div class="col-md-12">
-                <article class="home-banner" style="background-image: url(./img/home.jpg);">
-                    <div class="entry-header">
-                        <h1>Explore our records</h1>
+    <!--<div class="blog-toolbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="follow-us">
+                        <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/32/rss.png?raw=true">
                     </div>
-                    <div class="entry-content">
-                        <div class="col-sm-4 clearfix" style="border-right: 1px solid #999;">
-                            <h3 class="margin-none">Help with your research</h3>
-                            <a class="button pull-right" href="#">Find guides</a>
-                        </div>
-                        <div class="col-sm-4 clearfix" style="border-right: 1px solid #999;">
-                            <h3 class="margin-none">Search 1,000 years of records</h3>
-                            <a class="button pull-right" href="#">Discovery - our catalogue</a>
-                        </div>
-                        <div class="col-sm-4 clearfix">
-                            <h3 class="margin-none">Find our digitised collections</h3>
-                            <a class="button pull-right" href="#">Online collections</a>
-                        </div>
-                    </div>
-                </article>
+                </div>
             </div>
         </div>
     </div>-->
+    <div class="blog-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <a class="button" href="#">Latest posts</a>
+                    <a class="button secondary-btn" href="#">Records and research</a>
+                    <a class="button secondary-btn" href="#">Behind the scenes</a>
+                    <a class="button secondary-btn" href="#">Technology and innovation</a>
+                    <a class="button secondary-btn" href="#">Archives and archivists</a>
+                </div>
+                <div class="col-md-3">
+                    <form action="" method="get" role="search">
+                        <input type="text" class="search-field" placeholder="Search our blog..." name="_q"
+                               required aria-required="true">
+                        <input type="submit" class="search-button" value="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="equal-heights-flex-box clearfix">
@@ -96,15 +93,100 @@
                     <div class="card">
                         <a href="#">
                             <div class="entry-thumbnail"
-                                 style="background-image: url(./src/news.jpg);">
+                                 style="background-image: url(./src/blog01.jpg);">
                             </div>
                             <div class="entry-content">
-                                <div class="content-type">News</div>
-                                <h3>LGBTQ+ project to recreate ‘London’s most bohemian rendezvous’</h3>
-                                <!--<div class="content-description">
-                                    <p>Today we can announce an exciting project to recreate a bohemian 1930s queer club
-                                        at a venue on the fringes of Soho and Covent Garden, in collaboration...</p>
-                                </div>-->
+                                <h3>X-rays and wallpapers: the hunt for arsenic</h3>
+                                <div class="content-description">
+                                    <p>Thursday 23 February 2017<br>
+                                    Dr Helen Wilson</p>
+                                    <p>Our Collection Care department hunted for arsenic within historic wallpaper samples…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog02.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>Was the early 19th century ‘Taboo’?</h3>
+                                <div class="content-description">
+                                    <p>Wednesday 22 February 2017<br>
+                                        Nathan Saker</p>
+                                    <p>BBC One’s new period drama Taboo, set in 1814, is a far cry from any Austen novel…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog03.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>The sinking of SS Mendi: an avoidable tragedy</h3>
+                                <div class="content-description">
+                                    <p>Tuesday 21 February 2017<br>
+                                        Daniel Gilfoyle</p>
+                                    <p>The sea was calm on the afternoon of 20 February 1917 as the SS Mendi left Plymouth harbour for Le Havre…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog04.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>Curzon’s curios</h3>
+                                <div class="content-description">
+                                    <p>Monday 20 February 2017<br>
+                                        Dr Richard Dunley</p>
+                                    <p>The Curzon correspondence has not disappointed in providing candid and amusing anecdotes, shedding light on his real views on individuals and events…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog05.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>Merchant Navy shipwrecks in the First World War</h3>
+                                <div class="content-description">
+                                    <p>Friday 17 February 2017<br>
+                                        Dr George Hay and Janet Dempsey</p>
+                                    <p>Battles and diplomacy tend to dominate the narrative of the war, but little of either would have been sustained without the efforts of the Merchant Navy…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog06.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>Discover local history in our library</h3>
+                                <div class="content-description">
+                                    <p>Friday 17 February 2017<br>
+                                        Michael Little</p>
+                                    <p>The National Archives’ library has a fine collection of local history books – and I’m going to look at a handful of them…</p>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -116,12 +198,13 @@
                                  style="background-image: url(./src/blog.jpg);">
                             </div>
                             <div class="entry-content">
-                                <div class="content-type">Blog</div>
                                 <h3>Digitising and conserving black cultural history</h3>
-                                <!--<div class="content-description">
+                                <div class="content-description">
+                                    <p>Monday 13 February 2017<br>
+                                        Angelina Bakalarou</p>
                                     <p>I prepared and conserved the Adamah Family Collection before digitisation –
                                         a challenging project which required a large scope of treatments…</p>
-                                </div>-->
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -130,186 +213,94 @@
                     <div class="card">
                         <a href="#">
                             <div class="entry-thumbnail"
-                                 style="background-image: url(./src/podcast.jpg);">
+                                 style="background-image: url(./src/blog07.jpg);">
                             </div>
                             <div class="entry-content">
-                                <div class="content-type">
-                                    Podcast
-                                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/black/png/24/volume-up.png?raw=true">
+                                <h3>Words of love: Valentine’s Day gifts</h3>
+                                <div class="content-description">
+                                    <p>Tuesday 31 January 2017<br>
+                                        Sally Hughes</p>
+                                    <p>As the romantics among you will have noticed it will soon be Valentine’s Day…</p>
                                 </div>
-                                <h3>Archive Notes: Prosthetics and the First World War</h3>
-                                <!--<div class="content-description">
-                                    <p>The first episode of a Q&A series in which we talk to researchers about the
-                                        records and stories they’ve uncovered at The National Archives. In ‘Prosthetics
-                                        and the First World War’, our First World War diverse histories researcher
-                                        Louise Bell...</p>
-                                </div>-->
                             </div>
                         </a>
                     </div>
                 </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog08.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>Volunteers at The National Archives: thank you!</h3>
+                                <div class="content-description">
+                                    <p>Monday 30 January 2017<br>
+                                        Roger Kershaw, Kelly Kimpton, and Anne Ramon</p>
+                                    <p>We benefit from the dedication and commitment of our volunteers from across the world…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog11.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>Cyber security: three steps senior managers need to take</h3>
+                                <div class="content-description">
+                                    <p>Thursday 24 November 2016<br>
+                                        Martin Fletcher</p>
+                                    <p>Senior managers play a vital role in driving the development of a cyber-secure culture across an entire organisation…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog09.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>Eight million photographs: where to begin?</h3>
+                                <div class="content-description">
+                                    <p>Friday 14 October 2016<br>
+                                        Jacqueline Moon</p>
+                                    <p>Explore some of the photographs we hold, and find out how we care for them…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(./src/blog10.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <h3>Building Great Wharton</h3>
+                                <div class="content-description">
+                                    <p>Friday 9 September 2016<br>
+                                        Simon Wilkes</p>
+                                    <p>Exploring how we designed and built a resource uncovering experiences of British life on the Home Front during the First World War…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
-    <!--<div class="container">
-        <div class="row">
-            <div class="feature-banner" style="background-image: url(./img/event-banner.jpg);">
-                <div class="banner-content-wrapper">
-                    <div class="banner-content">
-                        <div class="content-type">Event</div>
-                        <h3>The Private Lives of the Tudors</h3>
-                        <p>The Tudor monarchs were constantly surrounded by an army of attendants, courtiers and ministers.
-                            Even in their most private moments, they were accompanied by a servant specifically appointed for the task.
-                            A groom of the stool would stand patiently by as Henry VIII performed his daily purges, and when Elizabeth I retired for the evening, one of her female servants would sleep at the end of her bed.</p>
-                        <div class="banner-toolbar">
-                            <a class="button pull-right" href="#">Book now</a>
-                            <p>£4 - 5<br>
-                                Thursday 9 February 2017<br>
-                                14:00 - 15:00 GMT</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="feature-banner" style="background-image: url(./img/event-banner.jpg);">
-                <div class="banner-content-wrapper">
-                <div class="banner-content">
-                    <div class="content-type">
-                        Event
-                        <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/24/calendar.png?raw=true">
-                    </div>
-                    <h3>The Private Lives of the Tudors</h3>
-                    <p>The Tudor monarchs were constantly surrounded by an army of attendants, courtiers and ministers. Even in their most private moments, they were accompanied by a servant specifically appointed for the task. A groom of the stool would stand patiently by as Henry VIII performed his daily purges, and when Elizabeth I retired for the evening, one of her female servants would sleep at the end of her bed.</p>
-                    <div class="banner-toolbar">
-                        <a class="button pull-right" href="#">Book now</a>
-                        <p>£4 - 5<br>
-                        Thursday 9 February 2017<br>
-                        14:00 - 15:00 GMT</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="container">
-        <!-- <div class="row">
-            <div class="equal-heights-flex-box clearfix">
-                <div class="card-grid">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-thumbnail"
-                                 style="background-image: url(./src/archives.jpg);">
-                            </div>
-                            <div class="entry-content">
-                                <div class="content-type">News</div>
-                                <h3>A Year in Archives 2016</h3>
-                                <div class="content-description">
-                                    <p>A Year in Archives 2016 showcases how the archives sector brims with innovative
-                                        and creative projects. By working together, archives are finding new...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-thumbnail"
-                                 style="background-image: url(./src/fire.jpg);">
-                            </div>
-                            <div class="entry-content">
-                                <div class="content-type">
-                                    Event
-                                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/black/png/16/calendar.png?raw=true">
-                                </div>
-                                <h3>Family Event - The Great Fire of London: Vlad and Boxton</h3>
-                                <div class="content-description">
-                                    <p>Wednesday 15 February 2017, 10:30 am</p>
-                                    <p>Join professional storyteller Kate Cunningham as she introduces you to Vlad the
-                                        flea and Boxton the rat.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-thumbnail"
-                                 style="background-image: url(./src/video.jpg);">
-                            </div>
-                            <div class="entry-content">
-                                <div class="content-type">
-                                    Video
-                                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/black/png/16/play-circle-o.png?raw=true">
-                                </div>
-                                <h3>The battle of Verdun, 1916</h3>
-                                <div class="content-description">
-                                    <p>The National Archives education team’s film of the month highlights a Pathé film
-                                        relating to current events, anniversaries or key topics that you may be covering
-                                        in the classroom.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="row">
-            <div class="equal-heights-flex-box clearfix">
-                <div class="card-grid-4-items">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-content">
-                                <h3>Academic engagement</h3>
-                                <div class="content-description">
-                                    <p>Our work as an Independent Research Organisation.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid-4-items">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-content">
-                                <h3>Archives sector</h3>
-                                <div class="content-description">
-                                    <p>Help to develop your collections and archives services.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid-4-items">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-content">
-                                <h3>Education</h3>
-                                <div class="content-description">
-                                    <p>Award-winning resources for students and teachers.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid-4-items">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-content">
-                                <h3>Information management</h3>
-                                <div class="content-description">
-                                    <p>Best practice in records management and transfer, and information re-use.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="newsletter-template">
@@ -336,60 +327,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="row">
-            <div class="equal-heights-flex-box clearfix">
-                <div class="card-grid">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-thumbnail"
-                                 style="background-image: url(./src/imagelibrary.jpg);">
-                            </div>
-                            <div class="entry-content">
-                                <div class="content-type">Image library</div>
-                                <h3>70,000 images available to download now</h3>
-                                <div class="content-description">
-                                    <p>Browse and buy images held at The National Archives, from iconic advertising to ancient maps.
-                                        Find out how to use images commercially…</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-thumbnail"
-                                 style="background-image: url(./src/book.jpg);">
-                            </div>
-                            <div class="entry-content">
-                                <div class="content-type">Book</div>
-                                <h3>Exciting new publication featuring letters from our own collection</h3>
-                                <div class="content-description">
-                                    <p>A stunning collection of letters taken from The National Archives' own collection.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-thumbnail"
-                                 style="background-image: url(./src/firstworldwar.jpg);">
-                            </div>
-                            <div class="entry-content">
-                                <div class="content-type">First World War 100</div>
-                                <h3>Explore ANZAC stories</h3>
-                                <div class="content-description">
-                                    <p>See first-hand reports of Gallipoli and images from the time and join us as we uncover
-                                        stories about the Australian and New Zealand contribution to the war effort.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </main>
 <footer id="footer" class="breather-top-bottom" role="contentinfo">
