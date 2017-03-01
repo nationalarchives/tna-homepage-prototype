@@ -116,9 +116,10 @@ header {
     padding: 0.5em 1em 0.5em;
     margin: 0;
 }
-.subscribe-icon img {
+.subscribe-icon {
     padding: 5px !important;
     margin-top: 0.5em !important;
+    float: right;
 }
 .dropdown-menu {
     background-color: #405480;
