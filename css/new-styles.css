@@ -60,7 +60,6 @@
 }
 .blog-banner {
     min-height: 260px;
-    margin-bottom: 0;
     position: relative;
 }
 .blog-toolbar {
@@ -68,13 +67,12 @@
 }
 .blog-nav {
     margin-bottom: 1.6em;
-    background-color: #fff;
 }
 .blog-nav a.button {
     margin: 0.5em 0.5em 0.5em 0;
 }
 .blog-nav a.secondary-btn {
-    background: #eee;
+    background: #ddd;
     color: #222;
 }
 a.secondary-btn:hover {
@@ -82,6 +80,58 @@ a.secondary-btn:hover {
     color: #000;
     text-decoration: underline;
     border: none;
+}
+/* nav */
+header {
+    padding-bottom: 0;
+}
+.mega-nav {
+    margin-top: 7px;
+    background-color: #405480;
+    color: #fff;
+}
+.mega-nav a {
+    color: #fff;
+}
+.mega-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mega-nav li {
+    float: left;
+    position: relative;
+    display: block;
+    padding: 0.5em 1em 0.5em;
+    margin: 0;
+}
+.subscribe-icon img {
+    padding: 5px !important;
+    margin-top: 0.5em !important;
+}
+.dropdown-menu {
+    background-color: #405480;
+    color: #fff;
+    width: 100%;
+}
+.dropdown-menu a {
+    color: #fff;
+}
+.dropdown-menu h3 {
+    margin-top: 0;
+}
+.about-menu {
+    border-top: solid 1px #5671aa;
+    display: none;
+    padding: 1em;
+}
+.about-menu li {
+    display: block;
+    padding: 0.5em 1em 0.5em;
+    margin: 0;
+}
+.expand-dropdown-menu {
+    display: block;
 }
 /* form */
 .blog-search {
