@@ -338,7 +338,14 @@ select {
     padding: 9px;
     margin: 0 0.2em 0.3em 0;
 }
+.tag-cloud {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1.6em;
+}
+.tag-cloud h3 {
 
+}
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
