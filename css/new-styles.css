@@ -374,6 +374,7 @@ select {
     background-color: #fff;
     padding: 1em;
     margin-bottom: 1.6em;
+    border-top: 4px solid #ccc;
 }
 .tag-cloud h3 {
 
@@ -383,6 +384,9 @@ select {
 }
 .tag-cloud .tags {
     margin: 0 1.5em;
+}
+.tag-section h3 {
+    margin-top: 0;
 }
 @media only screen
 and (min-device-width : 768px)
