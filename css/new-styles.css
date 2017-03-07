@@ -1,6 +1,9 @@
 /*!
  * New styles go here
  */
+.prototype-index article {
+    padding: 1em;
+}
 
 .banner-full-width {
     padding: 1em;

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en-gb" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="initial-scale = 1.0" name="viewport">
+    <title>TNA blog landing page prototype</title>
+    <link rel='stylesheet' id='tna-styles-css' href='../css/base-sass.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='new-styles-css' href='../css/new-styles.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='tna-google-fonts-css'
+          href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.1'
+          type='text/css' media='all'/>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+            crossorigin="anonymous"></script>
+</head>
+
+<body class="home page">
+<header id="header" role="banner">
+    <a id="skip-to-main-content" href="#">Skip to Main Content</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-sm-5" id="logo-holder">
+                <button aria-label="Toggle menu" id="mega-menu-mobile"></button>
+                <a href="#" title="Go to The National Archives homepage"
+                   class="visible-lg visible-md visible-sm">
+                    <img src="../img/logo-white.png" alt="The National Archives" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-8 col-sm-2" id="mobile-logo-holder">
+                <button title="Main menu" aria-label="Toggle menu" id="mega-menu-pull-down" class="hidden-xs">
+                    <span>Menu</span></button>
+                <a href="#" title="Go to The National Archives homepage" class="hidden-lg hidden-md hidden-sm">
+                    <img src="../img/logo-white.png" alt="The National Archives" class="img-responsive">
+                </a>
+            </div>
+            <!--<div class="col-xs-2 col-sm-5" id="search-field-wrapper">
+                <form action="/search/results" method="get" id="globalSearch" role="search" class="hidden-xs">
+                    <span id="scope-selector">&nbsp;</span>
+                    <input type="text" class="search-field" placeholder="Search our website..." id="tnaSearch" name="_q"
+                           required aria-required="true">
+                    <input type="submit" class="search-button" id="search-button" value="">
+                </form>
+            </div>-->
+        </div>
+        <div class="row hidden-lg hidden-md hidden-sm">
+            <div class="col-md-12">
+                <button class="search-expander">&nbsp;</button>
+            </div>
+        </div>
+    </div>
+    <!--<div class="mega-nav-wrapper">
+        <script>
+            $(function() {
+                $(".about").click(function() {
+                    $( ".about-menu" ).toggleClass( "expand-dropdown-menu" );
+                });
+            });
+        </script>
+        <div class="mega-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li class="about">
+                                <a href="#">About us</a>
+                            </li>
+                            <li>Education</li>
+                            <li>Help with your research</li>
+                            <li>Information management</li>
+                            <li>Archives sector</li>
+                            <li>Academic engagement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="about-menu">
+                        <div class="col-md-3">
+                            <h3>About us</h3>
+                            <p><small>We are the official archive and publisher for the UK government and guardians
+                                of over 1,000 years of iconic national documents. We are a non-ministerial government department.</small></p>
+                        </div>
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li><a href="http://www.nationalarchives.gov.uk/about/visit-us/">Visit us</a></li>
+                                <li><a href="http://www.nationalarchives.gov.uk/about/visit-us/opening-times">Opening times</a></li>
+                                <li><a href="http://www.nationalarchives.gov.uk/about/jobs/">Jobs</a></li>
+                                <li><a href="http://www.nationalarchives.gov.uk/about/get-involved/">Get involved</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                <li><a href="http://www.nationalarchives.gov.uk/about/news/">News</a></li>
+                                <li><a href="http://www.nationalarchives.gov.uk/about/press-room/">Press room</a></li>
+                                <li><a href="http://www.nationalarchives.gov.uk/about/commercial-opportunities/">Commercial opportunities</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</header>
+<main id="primary" role="main" class="content-area home">
+    <div role="banner" class="banner-full-width blog-banner feature-img"
+         style="background-image: url(../img/blog-banner.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="banner-header col-md-12">
+                    <div class="breadcrumbs">
+                        <a href="http://www.nationalarchives.gov.uk/">Home</a> <span class="sep">&gt;</span> <span>Blog</span>
+                    </div>
+                    <h1 class="text-center">Blog</h1>
+                    <div class="feature-img-caption img-caption-top">
+                        <button class="eye_caption">&nbsp;</button>
+                        <div class="image_caption_back">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8">
+                        <select>
+                            <option value="#">Select month</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/2017/03/"> March 2017 &nbsp;(3)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/2017/02/"> February 2017 &nbsp;(14)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/2017/01/"> January 2017 &nbsp;(10)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/2016/12/"> December 2016 &nbsp;(16)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/2016/11/"> November 2016 &nbsp;(10)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/2016/10/"> October 2016 &nbsp;(17)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/2016/09/"> September 2016 &nbsp;(17)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/2016/08/"> August 2016 &nbsp;(14)</option>
+                        </select>
+                        <select>
+                            <option value="#">Select an author...</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/adelebush/">Adele Bush (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/aailes/">Adrian Ailes (2)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/achurchman/">Adrian Churchman (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/aritchie/">Alex Ritchie (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/aphillips/">Alexa Phillips (3)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/amartino/">Allison Martino (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/abevan/">Amanda Bevan (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/aspencer/">Amanda Spencer (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/acoaker/">Amy Coaker (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/agee/">Amy Gee (2)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/agreir/">Amy Greir (3)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/ahowe/">Amy Howe (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/asampson/">Amy Sampson (2)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/adonaldson/">Anastasia Donaldson (1)</option>
+                            <option value="http://blog.nationalarchives.gov.uk/blog/author/zharrigan/">Zoe Harrigan (1)</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-right">
+                        <form action="" method="get" role="search">
+                            <input type="text" class="search-field" placeholder="Search our blog..." name="_q"
+                                   required aria-required="true">
+                            <input type="submit" class="search-button" value="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="blog-toolbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="follow-us">
+                        <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/32/rss.png?raw=true">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="blog-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 follow-us">
+                    <a class="button" href="#">Latest posts <span class="arrow-down"></span></a>
+                    <a class="button secondary-btn" href="#">Records and research</a>
+                    <a class="button secondary-btn" href="#">Behind the scenes</a>
+                    <a class="button secondary-btn" href="#">Managing information</a>
+                    <a class="button secondary-btn" href="#">Technology and innovation</a>
+                    <a class="button secondary-btn" href="#">Archives and archivists</a>
+                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/32/rss.png?raw=true" class="subscribe-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="equal-heights-flex-box clearfix">
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog01.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Thursday 23 February 2017</div>
+                                <h3>X-rays and wallpapers: the hunt for arsenic</h3>
+                                <div class="content-description">
+                                    <p>Dr Helen Wilson</p>
+                                    <p>Our Collection Care department hunted for arsenic within historic wallpaper samples…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog02.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Wednesday 22 February 2017</div>
+                                <h3>Was the early 19th century ‘Taboo’?</h3>
+                                <div class="content-description">
+                                    <p>Nathan Saker</p>
+                                    <p>BBC One’s new period drama Taboo, set in 1814, is a far cry from any Austen novel…</p>
+                                    <div class="entry-comments">
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog03.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Tuesday 21 February 2017</div>
+                                <h3>The sinking of SS Mendi: an avoidable tragedy</h3>
+                                <div class="content-description">
+                                    <p>Daniel Gilfoyle</p>
+                                    <p>The sea was calm on the afternoon of 20 February 1917 as the SS Mendi left Plymouth harbour for Le Havre…</p>
+                                    <div class="entry-comments">
+                                        <p>1 comment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog04.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Monday 20 February 2017</div>
+                                <h3>Curzon’s curios</h3>
+                                <div class="content-description">
+                                    <p>Dr Richard Dunley</p>
+                                    <p>The Curzon correspondence has not disappointed in providing candid and amusing anecdotes, shedding light on his real views on individuals and events…</p>
+                                    <div class="entry-comments">
+                                        <p>17 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog05.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Friday 17 February 2017</div>
+                                <h3>Merchant Navy shipwrecks in the First World War</h3>
+                                <div class="content-description">
+                                    <p>Dr George Hay and Janet Dempsey</p>
+                                    <p>Battles and diplomacy tend to dominate the narrative of the war, but little of either would have been sustained without the efforts of the Merchant Navy…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog06.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Friday 17 February 2017</div>
+                                <h3>Discover local history in our library</h3>
+                                <div class="content-description">
+                                    <p>Michael Little</p>
+                                    <p>The National Archives’ library has a fine collection of local history books – and I’m going to look at a handful of them…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Monday 13 February 2017</div>
+                                <h3>Digitising and conserving black cultural history</h3>
+                                <div class="content-description">
+                                    <p>Angelina Bakalarou</p>
+                                    <p>I prepared and conserved the Adamah Family Collection before digitisation –
+                                        a challenging project which required a large scope of treatments…</p>
+                                    <div class="entry-comments">
+                                        <p>2 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog07.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Tuesday 31 January 2017</div>
+                                <h3>Words of love: Valentine’s Day gifts</h3>
+                                <div class="content-description">
+                                    <p>Sally Hughes</p>
+                                    <p>As the romantics among you will have noticed it will soon be Valentine’s Day…</p>
+                                    <div class="entry-comments">
+                                        <p>3 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog08.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Monday 30 January 2017</div>
+                                <h3>Volunteers at The National Archives: thank you!</h3>
+                                <div class="content-description">
+                                    <p>Roger Kershaw, Kelly Kimpton, and Anne Ramon</p>
+                                    <p>We benefit from the dedication and commitment of our volunteers from across the world…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog11.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Thursday 24 November 2016</div>
+                                <h3>Cyber security: three steps senior managers need to take</h3>
+                                <div class="content-description">
+                                    <p>Martin Fletcher</p>
+                                    <p>Senior managers play a vital role in driving the development of a cyber-secure culture across an entire organisation…</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog09.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Friday 14 October 2016</div>
+                                <h3>Eight million photographs: where to begin?</h3>
+                                <div class="content-description">
+                                    <p>Jacqueline Moon</p>
+                                    <p>Explore some of the photographs we hold, and find out how we care for them…</p>
+                                    <div class="entry-comments">
+                                        <p>9 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <a href="#">
+                            <div class="entry-thumbnail"
+                                 style="background-image: url(../src/blog10.jpg);">
+                            </div>
+                            <div class="entry-content">
+                                <div class="content-description">Friday 9 September 2016</div>
+                                <h3>Building Great Wharton</h3>
+                                <div class="content-description">
+                                    <p>Simon Wilkes</p>
+                                    <p>Exploring how we designed and built a resource uncovering experiences of British life on the Home Front during the First World War…</p>
+                                    <div class="entry-comments">
+                                        <p>11 comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <article>
+                    <div class="entry-header">
+                        <h2>Tags</h2>
+                    </div>
+                    <div class="entry-content clearfix">
+                        <div class="tags">
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/archives-sector/" class="tag-link-33 nktagcloud-25" title="98" rel="tag" style="font-size: 25.4px;">archives sector</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/books/" class="tag-link-301 nktagcloud-19" title="60" rel="tag" style="font-size: 19.91px;">books</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/collection-care/" class="tag-link-40 nktagcloud-15" title="32" rel="tag" style="font-size: 15.87px;">collection care</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/digital/" class="tag-link-47 nktagcloud-18" title="50" rel="tag" style="font-size: 18.47px;">digital</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/digital-preservation/" class="tag-link-56 nktagcloud-16" title="34" rel="tag" style="font-size: 16.16px;">digital preservation</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/family-history/" class="tag-link-413 nktagcloud-18" title="49" rel="tag" style="font-size: 18.32px;">family history</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/first-world-war/" class="tag-link-614 nktagcloud-40" title="199" rel="tag" style="font-size: 40px;">first world war</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/genealogy/" class="tag-link-30 nktagcloud-16" title="34" rel="tag" style="font-size: 16.16px;">genealogy</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/government/" class="tag-link-108 nktagcloud-16" title="33" rel="tag" style="font-size: 16.01px;">government</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/information-management/" class="tag-link-97 nktagcloud-20" title="62" rel="tag" style="font-size: 20.2px;">information management</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/maps/" class="tag-link-23 nktagcloud-16" title="33" rel="tag" style="font-size: 16.01px;">maps</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/my-tommys-war/" class="tag-link-633 nktagcloud-16" title="34" rel="tag" style="font-size: 16.16px;">my tommy's war</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/opening-up-archives-2/" class="tag-link-702 nktagcloud-16" title="35" rel="tag" style="font-size: 16.3px;">opening up archives</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/photo/" class="tag-link-854 nktagcloud-15" title="26" rel="tag" style="font-size: 15px;">photo</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/research/" class="tag-link-21 nktagcloud-22" title="78" rel="tag" style="font-size: 22.51px;">research</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/second-world-war/" class="tag-link-151 nktagcloud-18" title="52" rel="tag" style="font-size: 18.76px;">second world war</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/technology/" class="tag-link-31 nktagcloud-16" title="35" rel="tag" style="font-size: 16.3px;">technology</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/websites/" class="tag-link-170 nktagcloud-15" title="29" rel="tag" style="font-size: 15.43px;">websites</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/women/" class="tag-link-14 nktagcloud-15" title="28" rel="tag" style="font-size: 15.29px;">women</a>
+                            <a href="http://blog.nationalarchives.gov.uk/blog/tag/womens-history/" class="tag-link-984 nktagcloud-15" title="26" rel="tag" style="font-size: 15px;">women's history</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article>
+                    <div class="entry-header">
+                        <h2>Comments</h2>
+                    </div>
+                    <div class="entry-content clearfix">
+                        <ul id="recentcomments">
+                            <li class="recentcomments"><span class="comment-author-link"><a
+                                    href="http://www.criminalhistorian.com/top-5-online-resources-for-finding-your-criminal-ancestor/"
+                                    rel="external nofollow" class="url">Top 5: Online resources for finding your
+                                criminal ancestor – Criminal Historian</a></span> on <a
+                                    href="http://blog.nationalarchives.gov.uk/blog/trace-criminal-ancestors/#comment-918555">How
+                                to trace your criminal ancestors</a></li>
+                            <li class="recentcomments"><span class="comment-author-link">David Matthew</span> on <a
+                                    href="http://blog.nationalarchives.gov.uk/blog/queerly-complicit-holland-park/#comment-918467">Queerly
+                                complicit at Holland Park</a></li>
+                            <li class="recentcomments"><span class="comment-author-link">Michael</span> on <a
+                                    href="http://blog.nationalarchives.gov.uk/blog/records-revolution-1960s-ever-us/#comment-918088">Records
+                                of the revolution: what did the 1960s do for us?</a></li>
+                            <li class="recentcomments"><span class="comment-author-link"><a
+                                    href="https://whateverwordsblog.wordpress.com/2017/03/06/the-totalitarianism-of-technology/"
+                                    rel="external nofollow" class="url">The Totalitarianism of Technology | Whatever
+                                Words</a></span> on <a
+                                    href="http://blog.nationalarchives.gov.uk/blog/lamps-going-europe/#comment-918014">The
+                                lamps are going out all over Europe</a></li>
+                            <li class="recentcomments"><span class="comment-author-link">Brian Portway</span> on <a
+                                    href="http://blog.nationalarchives.gov.uk/blog/pocahontas-london-1616-1617/#comment-917564">Pocahontas
+                                in London, 1616-17</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="newsletter-template">
+                    <div class="news-icon">
+                        <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/tna-newsletter-icon.png" alt="TNA Newsletter Icon">
+                    </div>
+
+                    <div class="news-content">
+                        <h2>Send me The National Archives’ newsletter</h2>
+                        <p>A monthly round-up of news, blogs, offers and events</p>
+                    </div>
+
+                    <div class="news-form">
+                        <form name="signup" id="signup" action="http://r1.wiredemail.net/signup.ashx" method="post" role="form">
+                            <input type="hidden" name="addressbookid" value="636353"> <!-- homepage and general sign up -->
+                            <!-- input type="hidden" name="addressbookid" value="732466" --> <!-- first world war portal sign up -->
+                            <input type="hidden" name="userid" value="173459">
+                            <input type="hidden" name="ReturnURL" value="http://www.nationalarchives.gov.uk/about/get-involved/newsletters/the-national-archives-newsletter/thank-you/?oldurl=http://www.nationalarchives.gov.uk/">
+                            <label for="Email">Send me The National Archives’ newsletter</label>
+                            <input type="email" name="Email" id="Email" required="required" placeholder="Enter your email address">
+                            <input id="newsletterSignUp" type="submit" name="Submit" value="Subscribe" class="margin-left-medium">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer id="footer" class="breather-top-bottom" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col col-xs-12 col-sm-6 col-md-3">
+                <address>
+                    The National Archives<br/>
+                    Kew, Richmond, Surrey,<br/>
+                    TW9 4DU
+                </address>
+                Tel: <a class="tel" href="tel:+4402088763444">+44 (0) 20 8876 3444</a>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-6 col-md-3">
+                <h4>Find out more</h4>
+                <ul>
+                    <li><a href="/contact-us/">Contact us</a></li>
+                    <li><a href="/about/press-room/">Press room</a></li>
+                    <li><a href="about/jobs/">Jobs and careers</a></li>
+                    <li><a href="/about/get-involved/friends-of-the-national-archives/">Friends of The National
+                        Archives</a></li>
+                </ul>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-6 col-md-3">
+                <h4>Websites</h4>
+                <ul>
+                    <li><a href="http://blog.nationalarchives.gov.uk/">Blog</a></li>
+                    <li><a href="http://media.nationalarchives.gov.uk/">Podcasts and videos</a></li>
+                    <li><a href="http://bookshop.nationalarchives.gov.uk/">Bookshop</a></li>
+                    <li><a href="https://images.nationalarchives.gov.uk/">Image library</a></li>
+                    <li><a href="/webarchive/">UK Government Web Archive</a></li>
+                    <li><a href="http://www.legislation.gov.uk/" target="_blank">Legislation.gov.uk</a></li>
+                    <li><a href="https://www.thegazette.co.uk/" target="_blank">The Gazette</a></li>
+                </ul>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-6 col-md-3">
+                <h4>Follow us</h4>
+                <div class="follow-us">
+                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/32/twitter.png?raw=true">
+                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/32/youtube-play.png?raw=true">
+                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/32/flickr.png?raw=true">
+                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/32/facebook.png?raw=true">
+                    <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/32/rss.png?raw=true">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer-col col-xs-12 col-sm-6 col-md-3">
+                <h4>Opening times</h4>
+                <div class="opening-times">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>09:00 – 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>09:00 – 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>09:00 – 19:00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>09:00 – 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>09:00 – 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-6 col-md-3">
+                <h4>Site help</h4>
+                <ul>
+                    <li><a href="/help/">Help</a></li>
+                    <li><a href="/help/faqs.htm">FAQs</a></li>
+                    <li><a href="/help/atoz.htm">Website A-Z index</a></li>
+                    <li><a href="/help/accessibility.htm">Accessibility</a></li>
+                    <li><a href="/help/sitemap.htm">Site map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-6 col-md-3">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/legal/">Terms of use</a></li>
+                    <li><a href="/legal/privacy.htm">Privacy policy</a></li>
+                    <li><a href="/legal/cookies.htm">Cookies</a></li>
+                    <li><a href="/about/freedom-of-information/">Freedom of Information</a></li>
+                    <li><a href="/about/our-role/transparency/">Transparency</a></li>
+                    <li><a href="/legal/our-fees.htm">Our fees</a></li>
+                </ul>
+            </div>
+            <div class="footer-col col-xs-12 col-sm-6 col-md-3">
+
+
+            </div>
+        </div>
+        <div class="row footer-base">
+            <div class="col-xs-12 col-sm-9 col-md-9 ogl">
+                <a title="External website - opens in a new window"
+                   href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"> <img
+                        alt="Open Government License logo" src="../img/logo-ogl.png"> </a>
+                <p>All content is available under the <a
+                        href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence
+                    v3.0</a>, <br>except where otherwise stated </p>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 text-right">
+                <a title="External website - opens in a new window" href="http://gov.uk/" target="_blank"> <img
+                        alt="GOV.UK logo" src="../img/gov-uk.png"> </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
