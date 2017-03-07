@@ -370,23 +370,8 @@ select {
     padding: 9px;
     margin: 0 0.2em 0.3em 0;
 }
-.tag-cloud {
-    background-color: #fff;
-    padding: 1em;
-    margin-bottom: 1.6em;
-    border-top: 4px solid #ccc;
-}
-.tag-cloud h3 {
-
-}
-.tag-cloud a {
-    padding: 0 0.5em;
-}
-.tag-cloud .tags {
-    margin: 0 1.5em;
-}
-.tag-section h3 {
-    margin-top: 0;
+.tags a {
+    padding-right: 1em;
 }
 @media only screen
 and (min-device-width : 768px)
