@@ -58,56 +58,6 @@
 .banner-header .action .button {
     margin: 0 0.2em 0.5em;
 }
-
-.mega-nav {
-    margin-top: 7px;
-    background-color: #405480;
-    color: #fff;
-}
-.mega-nav a {
-    color: #fff;
-}
-.mega-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.mega-nav li {
-    float: left;
-    position: relative;
-    display: block;
-    padding: 0.5em 1em 0.5em;
-    margin: 0;
-}
-.subscribe-icon {
-    padding: 5px !important;
-    margin-top: 0.5em !important;
-    float: right;
-}
-.dropdown-menu {
-    background-color: #405480;
-    color: #fff;
-    width: 100%;
-}
-.dropdown-menu a {
-    color: #fff;
-}
-.dropdown-menu h3 {
-    margin-top: 0;
-}
-.about-menu {
-    border-top: solid 1px #5671aa;
-    display: none;
-    padding: 1em;
-}
-.about-menu li {
-    display: block;
-    padding: 0.5em 1em 0.5em;
-    margin: 0;
-}
-.expand-dropdown-menu {
-    display: block;
-}
 .no-breadcrumb {
     margin-top: 46px;
 }
