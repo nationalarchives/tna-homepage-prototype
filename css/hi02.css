@@ -1,0 +1,72 @@
+/*!
+ * HI02 CSS
+ */
+
+.banner-header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #fff;
+}
+.banner-header .open {
+    min-width: 320px;
+    float: right;
+    padding: 0.5em 0.5em 0.5em 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    background: url('../img/clock.png') 7px center no-repeat;
+}
+.banner-header a.button {
+    margin-bottom: 0.3em;
+}
+.container .feature-banner {
+    margin: 0 15px 1.5em 15px;
+}
+.feature-banner {
+    margin-bottom: 1.5em;
+    background-position: center center;
+    background-size: cover;
+}
+.banner-content-wrapper {
+    padding: 1.3em;
+    width: 100%;
+    background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #000 , transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #000, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #000, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #000 , transparent); /* Standard syntax */
+}
+.banner-content {
+    color: #fff;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 48% 0 15px;
+}
+.banner-toolbar {
+    border-top: 1px #eee solid;
+    padding-top: 0.5em;
+}
+.opening-times table {
+    width: 100%;
+}
+.follow-us img {
+    background-color: #008484;
+    border-radius: 50%;
+    padding: 9px;
+    margin: 0 0.2em 0.3em 0;
+}
+@media (max-width: 768px) {
+    .banner-content {
+        padding: 0 15px;
+    }
+    .banner-content-wrapper {
+        background: #000; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, #000 , #000 , transparent); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #000, #000 , transparent); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #000, #000 , transparent); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #000 , #000 , transparent); /* Standard syntax */
+    }
+}
+
+
+
