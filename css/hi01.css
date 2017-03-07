@@ -1,0 +1,164 @@
+/*!
+ * New styles go here
+ */
+
+.banner-full-width {
+    padding: 1em;
+    min-height: 320px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 1.6em;
+}
+.banner-full-width h1 {
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    text-align: center;
+    margin-top: 48px;
+}
+.home-banner {
+    background-position: center center;
+    background-size: cover;
+    height: 288px;
+    position: relative;
+}
+.home-banner .entry-header {
+    background: none;
+}
+.home-banner .entry-content {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    background: rgba(0,0,0,.66);
+    color: #ddd;
+    width: 100%;
+    padding: 1em .2em;
+}
+.home-banner .entry-content h3 {
+    margin-top: 0;
+}
+.banner-header {
+    color: #fff;
+}
+.banner-header .open {
+    max-width: 260px;
+    margin: 0 auto;
+    padding-left: 60px;
+    text-align: left;
+    background: url('../img/clock.png') left top no-repeat;
+}
+.banner-header .open a:active, .banner-header .open a:link, .banner-header .open a:visited {
+    color: #fce45c;
+}
+.banner-header .action {
+    margin: 1.5em 0 2.5em;
+}
+.banner-header .action .button {
+    margin: 0 0.2em 0.5em;
+}
+
+.mega-nav {
+    margin-top: 7px;
+    background-color: #405480;
+    color: #fff;
+}
+.mega-nav a {
+    color: #fff;
+}
+.mega-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mega-nav li {
+    float: left;
+    position: relative;
+    display: block;
+    padding: 0.5em 1em 0.5em;
+    margin: 0;
+}
+.subscribe-icon {
+    padding: 5px !important;
+    margin-top: 0.5em !important;
+    float: right;
+}
+.dropdown-menu {
+    background-color: #405480;
+    color: #fff;
+    width: 100%;
+}
+.dropdown-menu a {
+    color: #fff;
+}
+.dropdown-menu h3 {
+    margin-top: 0;
+}
+.about-menu {
+    border-top: solid 1px #5671aa;
+    display: none;
+    padding: 1em;
+}
+.about-menu li {
+    display: block;
+    padding: 0.5em 1em 0.5em;
+    margin: 0;
+}
+.expand-dropdown-menu {
+    display: block;
+}
+.no-breadcrumb {
+    margin-top: 46px;
+}
+.container .feature-banner {
+    margin: 0 15px 1.5em 15px;
+}
+.feature-banner {
+    margin-bottom: 1.5em;
+    background-position: center center;
+    background-size: cover;
+}
+.banner-content-wrapper {
+    padding: 1.3em;
+    width: 100%;
+    background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #000 , transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #000, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #000, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #000 , transparent); /* Standard syntax */
+}
+.banner-content {
+    color: #fff;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 48% 0 15px;
+}
+.banner-toolbar {
+    border-top: 1px #eee solid;
+    padding-top: 0.5em;
+}
+.opening-times table {
+    width: 100%;
+}
+.follow-us img {
+    background-color: #008484;
+    border-radius: 50%;
+    padding: 9px;
+    margin: 0 0.2em 0.3em 0;
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        padding: 0 15px;
+    }
+    .banner-content-wrapper {
+        background: #000; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, #000 , #000 , transparent); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #000, #000 , transparent); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #000, #000 , transparent); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #000 , #000 , transparent); /* Standard syntax */
+    }
+}
+
+
