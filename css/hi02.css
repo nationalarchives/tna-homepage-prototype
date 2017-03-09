@@ -14,7 +14,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: left;
-    background: url('../img/clock.png') 7px center no-repeat;
+    background: url('../img/clock-blk.png') 12px center no-repeat;
 }
 .banner-header a.button {
     margin-bottom: 0.3em;
