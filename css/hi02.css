@@ -58,6 +58,9 @@
 .level-one .card h3 {
     margin: 0;
 }
+.level-one-icon {
+    padding-right: 0;
+}
 .level-one .card img {
     margin-bottom: 0.5em;
 }
