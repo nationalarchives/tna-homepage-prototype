@@ -1,2 +1,2 @@
 # Prototypes
-Work in progress design ideas for furture web projects
+Work in progress design ideas for future web projects.
