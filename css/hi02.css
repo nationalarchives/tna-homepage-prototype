@@ -79,6 +79,33 @@
 .level-one .card img {
     margin-bottom: 0.5em;
 }
+.tile {
+    padding: 0.6em 1em;
+    width: 33%;
+    background: #fff;
+    display: inline-block;
+}
+.tile span {
+    color: #2A5DB0;
+    display: block;
+    font-size: 1.2em;
+    font-family: bitter;
+}
+a.tile:hover {
+    box-shadow: 0px 2px 5px #ccc;
+}
+.explore {
+    margin-top: 1.6em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+.about-tna {
+    background-color: #fff;
+}
+.about-tna p {
+    font-size: 1.4em;
+    margin-bottom: 0;
+}
 @media (max-width: 768px) {
     .banner-content {
         padding: 0 15px;
