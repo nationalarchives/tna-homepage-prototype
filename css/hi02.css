@@ -95,11 +95,10 @@ a.tile:hover {
     box-shadow: 0px 2px 5px #ccc;
 }
 .explore {
-    margin-top: 1.6em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
 }
 .about-tna {
+    padding-top: 1.6em;
     background-color: #fff;
 }
 .about-tna p {
