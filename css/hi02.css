@@ -116,6 +116,9 @@ a.tile:hover {
     font-size: 1.4em;
     margin-bottom: 0;
 }
+.about-tna .open {
+    margin: 0;
+}
 @media (max-width: 768px) {
     .banner-content {
         padding: 0 15px;
