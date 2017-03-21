@@ -127,6 +127,20 @@ a.tile:hover {
         background: -moz-linear-gradient(right, #000, #000 , transparent); /* For Firefox 3.6 to 15 */
         background: linear-gradient(to right, #000 , #000 , transparent); /* Standard syntax */
     }
+
+
+}
+
+@media (max-width: 1024px) {
+
+
+    .open{
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        float:none !important;
+        max-width: 320px;
+    }
 }
 
 
