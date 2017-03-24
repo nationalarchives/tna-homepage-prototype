@@ -1,6 +1,10 @@
 /*!
  * HI02 CSS
  */
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 .action-btns{
     margin-left:auto;
     margin-right: auto;
@@ -12,7 +16,50 @@
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: transparent;
+    position: relative;
 }
+
+/** Version alt4 intro styles **/
+.intro-header{
+padding:0px;
+    position: relative;
+}
+.intro-header .intro{
+    font-size: 1.2em;
+}
+.intro-image{
+    background: url('../img/tna-building-01.jpg') center no-repeat;
+    background-size: cover;
+    height:auto;
+    min-height: 300px;
+    margin-bottom: 25px;
+    color:#fff;
+}
+.intro-overlay{
+background-color: rgba(0,0,0,0.7);
+    position: absolute;bottom: 0;
+    width:100%;
+    padding:10px;
+}
+
+.intro-header .open-white{
+    min-width: 320px;
+    float: right;
+    padding: 0.5em 0.5em 0.5em 70px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: left;
+    background: url('../img/clock.png') 12px center no-repeat;
+
+}
+.intro-header a{
+    color:#fce45c;
+}
+.intro-header a.tile:hover{
+    box-shadow: none;
+}
+/** Version alt4 intro styles **/
+
 .banner-header .open {
     min-width: 320px;
     float: right;
@@ -22,6 +69,7 @@
     text-align: left;
     background: url('../img/clock-blk.png') 12px center no-repeat;
 }
+
 .banner-header a.button {
     margin-bottom: 0.3em;
 }
@@ -105,6 +153,7 @@ a.tile:hover {
     box-shadow: 0px 2px 5px #ccc;
     color: #fff;
 }
+
 .explore {
     padding: 1em 0;
 }
@@ -143,6 +192,33 @@ a.tile:hover {
         margin-right: auto;
         float:none !important;
         max-width: 320px;
+    }
+
+    .open-white{
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        float:none !important;
+        max-width: 320px;
+        margin-bottom: 10px;
+    }
+.intro-header .intro{
+    display: block;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 768px) {
+    .tile {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .intro-image{
+
+        min-height: 420px;
     }
 }
 
