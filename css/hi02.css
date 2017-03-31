@@ -40,7 +40,7 @@ background-color: rgba(0,0,0,0.7);
 }
 
 .intro-header .open-white{
-    min-width: 320px;
+    max-width: 360px;
     float: right;
     padding: 0.5em 0.5em 0.5em 70px;
     border: 1px solid #fff;
@@ -149,8 +149,11 @@ background-color: rgba(0,0,0,0.7);
 a.tile:hover {
     box-shadow: 0px 2px 5px #ccc;
     color: #fff;
-}
 
+}
+a.tile{
+    margin-bottom: 0px;
+}
 .explore {
     padding: 1em 0;
 }
@@ -212,7 +215,9 @@ a.tile:hover {
         width: 100%;
         font-size: 1em;
     }
-
+    a.tile{
+        margin-bottom: 5px;
+    }
     .intro-image{
 
         min-height: 420px;
