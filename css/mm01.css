@@ -25,6 +25,16 @@ footer a:active, footer a:link, footer a:visited {
 .follow-us img {
     background-color: #848484;
 }
+.intro-overlay {
+    background-color: rgba(0,0,0,0.5);
+}
+.banner-content-wrapper {
+    background: #666;
+    background: -webkit-linear-gradient(left, #666 , transparent);
+    background: -o-linear-gradient(right, #666, transparent);
+    background: -moz-linear-gradient(right, #666, transparent);
+    background: linear-gradient(to right, #666 , transparent);
+}
 
 
 
