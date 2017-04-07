@@ -86,7 +86,7 @@ nav ul, nav li {
     padding: 36px 20px 36px 12px;
     margin: 0 auto;
 }
-.sub-menu > div a {
+.sub-menu .link-items a {
     display: block;
     width: 100%;
     padding: 7px 0;
@@ -100,7 +100,7 @@ nav ul, nav li {
 .sub-menu p {
     padding-right: 20%;
 }
-.sub-menu h3 {
+.sub-menu h2 {
     margin-top: 0;
 }
 
