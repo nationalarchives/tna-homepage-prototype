@@ -16,6 +16,39 @@
     position: relative;
 }
 
+/** Version alt5 level one styles **/
+.level-one-heading{
+    background-color: #5E7D8A;
+    min-height: 100px;
+    height:auto;
+    width:100%;
+    color: #fff;
+    padding:5px;
+}
+.level-one-heading a{
+    color:#fff;
+    text-decoration: none !important;
+}
+.level-one-card{
+    padding:0px !important;
+    background-color: #fff !important;
+    color:#000;
+    height:auto;
+    min-height:210px;
+    box-shadow: 0px 2px 5px #ddd;
+}
+
+.level-one-heading .level-one-icon{
+    position: relative;
+    top:8px;
+}
+.level-one-card .content-description{
+    padding-top: 10px;
+}
+.level-one-heading img{
+    width:100%;
+    max-width: 76px;
+}
 /** Version alt4 intro styles **/
 .intro-header{
 padding:0px;
@@ -184,7 +217,12 @@ a.tile{
 }
 
 @media (max-width: 1024px) {
-
+    .level-one-heading{
+       text-align: center;
+    }
+    .level-one-heading img{
+        margin:0 auto;
+    }
 
     .open{
         margin-top: 0px;
