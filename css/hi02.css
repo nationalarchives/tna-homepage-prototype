@@ -49,6 +49,12 @@
     width:100%;
     max-width: 76px;
 }
+.level-one-card .col-lg-7{
+    padding-left:2px;
+}
+.level-one-heading h3{
+    line-height: 1.4em;
+}
 /** Version alt4 intro styles **/
 .intro-header{
 padding:0px;
