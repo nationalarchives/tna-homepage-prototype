@@ -86,7 +86,8 @@ background-color: rgba(0,0,0,0.7);
     border-radius: 0px;
     text-align: left;
     background: url('../img/clock.png') 12px center no-repeat;
-
+    position: relative;
+right:4px;
 }
 .intro-header a{
     color:#fce45c;
