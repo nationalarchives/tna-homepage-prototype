@@ -58,6 +58,10 @@
     background-color: #fff;
     box-shadow: 0px 2px 5px #ddd;
 }
+.card a {
+    display: block;
+    width: 100%;
+}
 .card .entry-content {
     padding: 1em;
     -webkit-flex-flow: row;
