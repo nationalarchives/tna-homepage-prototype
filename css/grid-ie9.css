@@ -9,6 +9,9 @@
 .flex-row .col-card-3 {
     float: left;
 }
+.card {
+    box-shadow: none;
+}
 @media (max-width: 768px) {
 
 }
