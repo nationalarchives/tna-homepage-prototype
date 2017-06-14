@@ -60,6 +60,8 @@
 }
 .card .entry-content {
     padding: 1em;
+    -webkit-flex-flow: row;
+    -ms-flex-direction: row;
 }
 @media (max-width: 768px) {
     .flex-row .col-card-4 {
