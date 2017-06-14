@@ -26,7 +26,7 @@
     -webkit-flex: 0 0 33.33333%;
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    width: 33.33333%;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 1.5em;
@@ -41,7 +41,7 @@
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
-    max-width: 25%;
+    width: 25%;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 1.5em;
@@ -73,14 +73,14 @@
         -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
-        max-width: 100%;
+        width: 100%;
     }
     .flex-row .col-card-3 {
         -webkit-box-flex: 0;
         -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
-        max-width: 50%;
+        width: 50%;
     }
 }
 @media (max-width: 480px) {
@@ -89,6 +89,6 @@
         -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
-        max-width: 100%;
+        width: 100%;
     }
 }
