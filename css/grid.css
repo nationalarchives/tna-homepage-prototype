@@ -22,6 +22,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    align-items: stretch;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.33333%;
     -ms-flex: 0 0 33.33333%;
@@ -37,6 +38,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    align-items: stretch;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
