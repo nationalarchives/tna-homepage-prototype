@@ -92,11 +92,13 @@
     }
 }
 @media (max-width: 480px) {
-    .flex-row .col-card-3 {
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 100%;
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    .flex-row {
+        display: block;
+    }
+    .flex-row .col-card-3, .flex-row .col-card-4 {
+        display: block;
+        float: left;
         max-width: 100%;
+        width: 100%;
     }
 }
