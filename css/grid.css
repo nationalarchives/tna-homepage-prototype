@@ -60,10 +60,13 @@
 }
 .card a:hover {
     text-decoration: none;
-    box-shadow: 0 7px 10px #ccc;
+    box-shadow: 0 4px 7px #ccc;
 }
 .card h3 {
     margin: .5em 0;
+}
+.card a:hover .entry-content h3 {
+    text-decoration: underline;
 }
 .card .entry-content {
     padding: 1em;
@@ -74,7 +77,8 @@
     display: block;
     width: 100%;
     min-height: 185px;
-    background-color: #ddd;
+    background: #ddd center center;
+    background-size: cover;
 }
 .card .entry-header {
     display: flex;
@@ -87,6 +91,13 @@
 .card .entry-header h3 {
     color: #fff;
     margin: 0;
+}
+.card p {
+    color: #444;
+}
+.card .content-type {
+    color: #8b8b8b;
+    font-size: .9em;
 }
 @media (max-width: 768px) {
     .col-card-4 {
