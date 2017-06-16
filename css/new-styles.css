@@ -5,3 +5,20 @@
     margin: 1.6em 0;
     padding: 1em;
 }
+cite{
+    border:1px solid #999 !important;
+    border-radius: .2em;
+    padding:2px;
+    color: #999;
+    background-color:  #eee ;
+    font-size: .8em;
+    margin-right:5px;
+}
+
+ul li{
+   margin-left:10px;
+    list-style: none;
+}
+ul li:before{
+    content: "- ";
+}

@@ -7,12 +7,16 @@
     <title>TNA homepage prototype</title>
     <link rel='stylesheet' id='tna-styles-css' href='../css/base-sass.css' type='text/css' media='all'/>
     <link rel='stylesheet' id='new-styles-css' href='../css/hi02.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='mm-styles-css' href='../css/mm01.css' type='text/css' media='all'/>
     <link rel='stylesheet' id='cards-css' href='../css/cards.css' type='text/css' media='all'/>
     <link rel='stylesheet' id='tna-google-fonts-css'
           href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C400italic%2C700italic%7CBitter&#038;ver=4.4.1'
           type='text/css' media='all'/>
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
 </head>
-
 <body class="home page">
 <header id="header" role="banner">
     <a id="skip-to-main-content" href="#">Skip to Main Content</a>
@@ -26,8 +30,6 @@
                 </a>
             </div>
             <div class="col-xs-8 col-sm-2" id="mobile-logo-holder">
-                <button title="Main menu" aria-label="Toggle menu" id="mega-menu-pull-down" class="hidden-xs">
-                    <span>Menu</span></button>
                 <a href="#" title="Go to The National Archives homepage" class="hidden-lg hidden-md hidden-sm">
                     <img src="../img/logo-white.png" alt="The National Archives" class="img-responsive">
                 </a>
@@ -48,14 +50,177 @@
         </div>
     </div>
 </header>
-<main id="primary" role="main" class="content-area">
-    <div role="banner" class="banner-header">
-        <div class="container">
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tna-menu">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="#" class="about">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="research">Help with your research</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="academic-engagement">Academic engagement</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="archives-sector">Archives sector</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="education">Education</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="information-management">Information management</a>
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-menu">
+        <div class="about">
             <div class="row">
+                <div class="col-md-4">
+                    <h2>About us</h2>
+                    <p>We are the official archive and publisher for the UK government and guardians of over
+                        1,000 years of iconic national documents.</p>
+                    <a class="button" href="#">Find out more</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Our Role</a>
+                    <a href="#">Visit us</a>
+                    <a href="#">Opening times</a>
+                    <a href="#">Jobs</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Get involved</a>
+                    <a href="#">News</a>
+                    <a href="#">Press room</a>
+                    <a href="#">Commercial opportunities</a>
+                </div>
+            </div>
+        </div>
+        <div class="research">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Help with your research</h2>
+                    <p>If you are new to The National Archives and want some help getting started with your
+                        family history or any other kind of research, you’re in the right place.</p>
+                    <a class="button" href="#">Find out more</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Search Discovery, our catalogue</a>
+                    <a href="#">Start your research here</a>
+                    <a href="#">Research guides A-Z</a>
+                    <a href="#">Online collections</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">UK Government Web Archive</a>
+                    <a href="#">Certificates of British Citizenship</a>
+                    <a href="#">Record copying</a>
+                </div>
+            </div>
+        </div>
+        <div class="academic-engagement">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Academic engagement</h2>
+                    <p>Our work as an Independent Research Organisation.</p>
+                    <a class="button" href="#">Find out more</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="archives-sector">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Archives sector</h2>
+                    <p>Help to develop your collections and archives services.</p>
+                    <a class="button" href="#">Find out more</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Historical Manuscripts Commission</a>
+                    <a href="#">Finding funding</a>
+                    <a href="#">Projects and programmes</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Case studies and research reports</a>
+                    <a href="#">Operating your archive</a>
+                    <a href="#">Our role in the archives sector</a>
+                </div>
+            </div>
+        </div>
+        <div class="education">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Education</h2>
+                    <p>Award-winning resources for students and teachers.</p>
+                    <a class="button" href="#">Find out more</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Time periods</a>
+                    <a href="#">Lessons</a>
+                    <a href="#">Workshops</a>
+                    <a href="#">Videoconferences</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Virtual classroom</a>
+                    <a href="#">Professional development</a>
+                    <a href="#">For teachers</a>
+                    <a href="#">For students</a>
+                </div>
+            </div>
+        </div>
+        <div class="information-management">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Information management</h2>
+                    <p>Best practice in records management and transfer, and information re-use.</p>
+                    <a class="button" href="#">Find out more</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Guidance and standards A-Z</a>
+                    <a href="#">Copyright</a>
+                    <a href="#">How to manage your information</a>
+                    <a href="#">Re-using PSI</a>
+                </div>
+                <div class="col-md-4 link-items">
+                    <a href="#">Producing official publications</a>
+                    <a href="#">Legislation and regulations</a>
+                    <a href="#">Training</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.menu-item a').on("click",function(){
+            var $class = $(this).attr('class');
+            if ($('.sub-menu div.' + $class).hasClass('open-menu')) {
+                $('.sub-menu div.' + $class).removeClass('open-menu');
+            } else {
+                $('.sub-menu div.' + $class).addClass('open-menu').siblings().removeClass('open-menu');
+            }
+        });
+    </script>
+</nav>
+<main id="primary" role="main" class="content-area">
+    <div role="banner" class="intro-header intro-image" style="background-image: url(http://placehold.it/960x450?text=&nbsp;);">
 
+        <div class="intro-overlay">
+            <div class="container">
                 <div class="col-lg-6">
-                    <h1>Explore our records</h1>
-
                     <p class="intro">
                         We are the official <a href="#">archive</a> for the UK government and guardians of over 1,000 years of iconic national documents.
 
@@ -63,26 +228,30 @@
 
                 </div>
                 <div class="col-lg-6 text-right">
-                    <div class="open">
+                    <div class="open-white">
                         Open today 09:00 - 19:00<br>
                         <a href="#">Plan your visit</a>
                     </div>
                 </div>
 
-            </div>
-            <div class="row">
-<div class="action-btns">
-                    <a class="button" href="#">Help with your research</a>
-                    <a class="button" href="#">Search the catalogue</a>
-                    <a class="button" href="#">Find online collections</a>
-    </div>
+
+                <div class="col-md-12">
+                    <div class="action">
+                        <a class="tile" href="#"><span>Help with your research</span></a>
+                        <a class="tile" href="#"><span>Search the catalogue</span></a>
+                        <a class="tile" href="#"><span>Find online collections</span></a>
+                    </div>
+                </div>
 
             </div>
         </div>
+
     </div>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="feature-banner" style="background-image: url(../img/event-banner02.jpg);">
+
+            <div class="container feature-banner" style="background-image: url(http://placehold.it/960x450?text=&nbsp;);">
                 <div class="banner-content-wrapper">
                     <div class="banner-content">
                         <div class="content-type">
@@ -90,16 +259,12 @@
                             <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/white/png/24/calendar.png?raw=true">
                         </div>
                         <h3>A conversation with Bettany Hughes, author of 'Istanbul: A Tale of Three Cities'</h3>
-                        <p>Istanbul has always been a place where stories and histories collide, where the idea is as potent as the fact. From the Qur’an to Shakespeare, the city previously known as Byzantium and Constantinople resonates as an idea and a place, overspilling its boundaries - real and imagined.</p>
-                        <div class="banner-toolbar">
-                            <a class="ghost-button pull-right" href="#">Book now</a>
-                            <p>£4 - £5<br>
-                                Wednesday 15 March 2017<br>
-                                14:00 - 15:00 GMT</p>
-                        </div>
+                        <p>Istanbul has always been a place where stories and histories collide, where the idea is as potent as the fact.</p>
+                        <a class="button" href="#">Read more</a>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <div class="container">
@@ -109,11 +274,11 @@
                     <div class="card">
                         <a href="#">
                             <div class="entry-thumbnail"
-                                 style="background-image: url(../src/news.jpg);">
+                                 style="background-image: url(http://placehold.it/960x450?text=&nbsp;);">
                             </div>
                             <div class="entry-content">
                                 <div class="content-type">
-                                   News
+                                    News
 
                                 </div>
                                 <h3>The National Archives presents Queer and the state</h3>
@@ -125,7 +290,7 @@
                     <div class="card">
                         <a href="#">
                             <div class="entry-thumbnail"
-                                 style="background-image: url(../src/behind-the-scenes.jpg);">
+                                 style="background-image: url(http://placehold.it/960x450?text=&nbsp;);">
                             </div>
                             <div class="entry-content">
                                 <div class="content-type">Event   <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/black/png/24/calendar.png?raw=true"></div>
@@ -138,7 +303,7 @@
                     <div class="card">
                         <a href="#">
                             <div class="entry-thumbnail"
-                                 style="background-image: url(../src/domesday-lincoln.jpg);">
+                                 style="background-image: url(http://placehold.it/960x450?text=&nbsp;);">
                             </div>
                             <div class="entry-content">
                                 <div class="content-type">
@@ -159,11 +324,11 @@
                     <div class="card">
                         <a href="#">
                             <div class="entry-thumbnail"
-                                 style="background-image: url(../src/records-of-revolution.jpg);">
+                                 style="background-image: url(http://placehold.it/960x450?text=&nbsp;);">
                             </div>
                             <div class="entry-content">
                                 <div class="content-type">
-                                   Blog
+                                    Blog
 
                                 </div>
                                 <h3>Read 'Records of the revolution: what did the 1960s do for us?'</h3>
@@ -175,7 +340,7 @@
                     <div class="card">
                         <a href="#">
                             <div class="entry-thumbnail"
-                                 style="background-image: url(../src/tudors.jpg);">
+                                 style="background-image: url(http://placehold.it/960x450?text=&nbsp;);">
                             </div>
                             <div class="entry-content">
                                 <div class="content-type">Audio   <img src="https://github.com/encharm/Font-Awesome-SVG-PNG/blob/master/black/png/24/play-circle-o.png?raw=true"></div>
@@ -188,115 +353,15 @@
                     <div class="card">
                         <a href="#">
                             <div class="entry-thumbnail"
-                                 style="background-image: url(../src/witch-fever.jpg);">
+                                 style="background-image: url(http://placehold.it/960x450?text=&nbsp;);">
                             </div>
                             <div class="entry-content">
                                 <div class="content-type">
-                                  Books
+                                    Books
                                 </div>
                                 <h3>Find out about our latest book 'Bitten By Witchfever' by Lucinda Hawksley</h3>
                             </div>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="equal-heights-flex-box clearfix level-one">
-                <div class="card-grid-4-items">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-content">
-                                <div class="col-lg-5 level-one-icon">
-                                    <img src="../img/icon-academic.png" class="img-responsive">
-                                </div>
-                                <div class="col-lg-7">
-                                    <h3>Academic engagement</h3>
-                                </div>
-                                <div class="col-lg-12 content-description">
-                                    <p>Our work as an Independent Research Organisation.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid-4-items">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-content">
-                                <div class="col-lg-5 level-one-icon">
-                                    <img src="../img/icon-archives.png" class="img-responsive">
-                                </div>
-                                <div class="col-lg-7">
-                                    <h3>Archives sector</h3>
-                                </div>
-                                <div class="col-lg-12 content-description">
-                                    <p>Help to develop your collections and archives services.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid-4-items">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-content">
-                                <div class="col-lg-5 level-one-icon">
-                                    <img src="../img/icon-education.png" class="img-responsive">
-                                </div>
-                                <div class="col-lg-7">
-                                    <h3>Education</h3>
-                                </div>
-                                <div class="col-lg-12 content-description">
-                                    <p>Award-winning resources for students and teachers.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-grid-4-items">
-                    <div class="card">
-                        <a href="#">
-                            <div class="entry-content">
-                                <div class="col-lg-5 level-one-icon">
-                                    <img src="../img/icon-information.png" class="img-responsive">
-                                </div>
-                                <div class="col-lg-7">
-                                    <h3>Information management</h3>
-                                </div>
-                                <div class="col-lg-12 content-description">
-                                    <p>Best practice in records management and transfer, and information re-use.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="newsletter-template">
-                    <div class="news-icon">
-                        <img src="http://www.nationalarchives.gov.uk/wp-content/themes/tna-base/img/tna-newsletter-icon.png" alt="TNA Newsletter Icon">
-                    </div>
-
-                    <div class="news-content">
-                        <h2>Send me The National Archives’ newsletter</h2>
-                        <p>A monthly round-up of news, blogs, offers and events</p>
-                    </div>
-
-                    <div class="news-form">
-                        <form name="signup" id="signup" action="http://r1.wiredemail.net/signup.ashx" method="post" role="form">
-                            <input type="hidden" name="addressbookid" value="636353"> <!-- homepage and general sign up -->
-                            <!-- input type="hidden" name="addressbookid" value="732466" --> <!-- first world war portal sign up -->
-                            <input type="hidden" name="userid" value="173459">
-                            <input type="hidden" name="ReturnURL" value="http://www.nationalarchives.gov.uk/about/get-involved/newsletters/the-national-archives-newsletter/thank-you/?oldurl=http://www.nationalarchives.gov.uk/">
-                            <label for="Email">Send me The National Archives’ newsletter</label>
-                            <input type="email" name="Email" id="Email" required="required" placeholder="Enter your email address">
-                            <input id="newsletterSignUp" type="submit" name="Submit" value="Subscribe" class="margin-left-medium">
-                        </form>
                     </div>
                 </div>
             </div>

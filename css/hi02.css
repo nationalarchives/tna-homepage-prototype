@@ -2,11 +2,101 @@
  * HI02 CSS
  */
 
+.action-btns{
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top:10px;
+
+}
 .banner-header {
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: #fff;
+    background-color: transparent;
+    position: relative;
 }
+
+/** Version alt5 level one styles **/
+.level-one-heading{
+    background-color: #597a87;
+    min-height: 100px;
+    height:auto;
+    width:100%;
+    color: #fff;
+    padding:5px;
+}
+.level-one-heading a{
+    color:#fff;
+    text-decoration: none !important;
+}
+.level-one-card{
+    padding:0px !important;
+    background-color: #fff !important;
+    color:#000;
+    height:auto;
+    min-height:210px;
+    box-shadow: 0px 2px 5px #ddd;
+}
+
+.level-one-heading .level-one-icon{
+    position: relative;
+    top:8px;
+}
+.level-one-card .content-description{
+    padding-top: 10px;
+}
+.level-one-heading img{
+    width:100%;
+    max-width: 76px;
+}
+.level-one-card .col-lg-7{
+    padding-left:2px;
+}
+.level-one-heading h3{
+    line-height: 1.4em;
+}
+/** Version alt4 intro styles **/
+.intro-header{
+padding:0px;
+    position: relative;
+}
+.intro-header .intro{
+    font-size: 1.2em;
+}
+.intro-image{
+    background: url('../img/tna-building-01.jpg') center no-repeat;
+    background-size: cover;
+    height:auto;
+    min-height: 300px;
+    margin-bottom: 25px;
+    color:#fff;
+}
+.intro-overlay{
+background-color: rgba(0,0,0,0.7);
+    position: absolute;bottom: 0;
+    width:100%;
+    padding:10px;
+}
+
+.intro-header .open-white{
+    max-width: 360px;
+    float: right;
+    padding: 0.5em 0.5em 0.5em 70px;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    text-align: left;
+    background: url('../img/clock.png') 12px center no-repeat;
+    position: relative;
+right:4px;
+}
+.intro-header a{
+    color:#fce45c;
+}
+.intro-header a.tile:hover{
+    box-shadow: none;
+}
+/** Version alt4 intro styles **/
+
 .banner-header .open {
     min-width: 320px;
     float: right;
@@ -14,8 +104,9 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: left;
-    background: url('../img/clock.png') 7px center no-repeat;
+    background: url('../img/clock-blk.png') 12px center no-repeat;
 }
+
 .banner-header a.button {
     margin-bottom: 0.3em;
 }
@@ -36,11 +127,26 @@
     background: -moz-linear-gradient(right, #000, transparent); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #000 , transparent); /* Standard syntax */
 }
+.banner-content-wrapper-right {
+    padding: 1.3em;
+    width: 100%;
+    background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, #000 , transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #000, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #000, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #000 , transparent); /* Standard syntax */
+}
 .banner-content {
     color: #fff;
     max-width: 1270px;
     margin: 0 auto;
     padding: 0 48% 0 15px;
+}
+.banner-content-right {
+    color: #fff;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px 0 48%;
 }
 .banner-toolbar {
     border-top: 1px #eee solid;
@@ -49,11 +155,58 @@
 .opening-times table {
     width: 100%;
 }
+.open{
+    margin-top: 40px;
+}
 .follow-us img {
     background-color: #008484;
     border-radius: 50%;
     padding: 9px;
     margin: 0 0.2em 0.3em 0;
+}
+.level-one .card h3 {
+    margin: 0;
+}
+.level-one-icon {
+    padding-right: 0;
+}
+.level-one .card img {
+    margin-bottom: 0.5em;
+}
+.tile {
+    padding: 0.6em 1em;
+    width: 33%;
+    background: #008484;
+    display: inline-block;
+}
+.tile span {
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    font-family: bitter;
+    text-align: center;
+}
+a.tile:hover {
+    box-shadow: 0px 2px 5px #ccc;
+    color: #fff;
+
+}
+a.tile{
+    margin-bottom: 0px;
+}
+.explore {
+    padding: 1em 0;
+}
+.about-tna {
+    padding-top: 1.6em;
+    background-color: #fff;
+}
+.about-tna p {
+    font-size: 1.4em;
+    margin-bottom: 0;
+}
+.about-tna .open {
+    margin: 0;
 }
 @media (max-width: 768px) {
     .banner-content {
@@ -65,6 +218,54 @@
         background: -o-linear-gradient(right, #000, #000 , transparent); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(right, #000, #000 , transparent); /* For Firefox 3.6 to 15 */
         background: linear-gradient(to right, #000 , #000 , transparent); /* Standard syntax */
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .level-one-heading{
+       text-align: center;
+    }
+    .level-one-heading img{
+        margin:0 auto;
+    }
+
+    .open{
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        float:none !important;
+        max-width: 320px;
+    }
+
+    .open-white{
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        float:none !important;
+        max-width: 320px;
+        margin-bottom: 10px;
+    }
+.intro-header .intro{
+    display: block;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 768px) {
+    .tile {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+    }
+    a.tile{
+        margin-bottom: 5px;
+    }
+    .intro-image{
+
+        min-height: 420px;
     }
 }
 
