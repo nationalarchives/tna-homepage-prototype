@@ -30,10 +30,10 @@ footer a:active, footer a:link, footer a:visited {
 }
 .banner-content-wrapper {
     background: #666;
-    background: -webkit-linear-gradient(left, #666 , transparent);
-    background: -o-linear-gradient(right, #666, transparent);
-    background: -moz-linear-gradient(right, #666, transparent);
-    background: linear-gradient(to right, #666 , transparent);
+    background: -webkit-linear-gradient(left, #aaa , transparent);
+    background: -o-linear-gradient(right, #aaa, transparent);
+    background: -moz-linear-gradient(right, #aaa, transparent);
+    background: linear-gradient(to right, #aaa , transparent);
 }
 
 
